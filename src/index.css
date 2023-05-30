@@ -1,4 +1,5 @@
 @import-normalize; /* bring in normalize.css styles */
+@import "./tarea1/components/user-profile.css";
 
 body {
   margin: 0;
