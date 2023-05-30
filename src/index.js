@@ -7,6 +7,9 @@ import './index.css';
 // --------------------------------------------------------------
 // -------- Lógica para procesar los datos del Json -------------
 // --------------------------------------------------------------
+
+// Task 1:
+
 const userData = {
   name: user.username,
   tag: user.tag,
@@ -16,6 +19,9 @@ const userData = {
   views: user.stats.views,
   likes: user.stats.likes,
 };
+
+// Task 2:
+
 // --------------------------------------------------------------
 
 ReactDOM.createRoot(document.getElementById('root')).render(
