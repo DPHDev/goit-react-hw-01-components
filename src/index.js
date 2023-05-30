@@ -26,6 +26,14 @@ const userData = {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserProfile avatarUrl={userData.avatar} userName={userData.username} userTag={userData.tag} userLocation={userData.location} userFollowers={userData.followers} userViews={userData.views} userLikes={userData.likes}/>
+    <UserProfile
+      avatarUrl={userData.avatar}
+      userName={userData.name}
+      userTag={userData.tag}
+      userLocation={userData.location}
+      userFollowers={userData.followers}
+      userViews={userData.views}
+      userLikes={userData.likes}
+    />
   </React.StrictMode>
 );

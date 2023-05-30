@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import './user-profile.css';
 
-export const UserProfile = ({avatarUrl, userName, userTag, userLocation, userFollowers, userViews, userLikes}) => {
+export const UserProfile = ({avatarUrl="https://cdn-icons-png.flaticon.com/512/2922/2922506.png", userName, userTag, userLocation="", userFollowers=0, userViews=0, userLikes=0}) => {
   return (
     <div class="profile">
       <div class="description">
@@ -27,3 +28,19 @@ export const UserProfile = ({avatarUrl, userName, userTag, userLocation, userFol
     </div>
   );
 };
+
+// -------------------------------------------------------
+//------------- Component Prop Types----------------------
+// -------------------------------------------------------
+
+UserProfile.propTypes = {
+  avatarUrl: PropTypes.string,
+  userName: PropTypes.string.isRequired, 
+  userTag: PropTypes.string.isRequired, 
+  userLocation: PropTypes.string, 
+  userFollowers: PropTypes.number.isRequired, 
+  userViews: PropTypes.number, 
+  userLikes: PropTypes.number
+}
+
+//---------------------------------------------------------
