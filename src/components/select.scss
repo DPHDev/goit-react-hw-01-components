@@ -1,0 +1,24 @@
+.menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 15vh auto 30px;
+
+
+    &_btn {
+        padding: 14px 24px;
+        border-radius: 10px;
+        color: white;
+        background-color: rebeccapurple;
+        border: 1px solid rebeccapurple;
+        border: 0px;
+        cursor: pointer;
+
+        &:hover {
+            color: rebeccapurple;
+            background-color: white;
+            border: 1px solid rebeccapurple;
+            scale: 1.2;
+        }
+    }
+}

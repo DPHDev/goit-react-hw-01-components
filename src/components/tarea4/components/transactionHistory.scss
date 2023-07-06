@@ -1,0 +1,29 @@
+.transaction-history {
+    width: 60%;
+    text-align: center;
+    border-collapse: 1px solid rgb(191, 192, 195);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    &_head {
+        background-color: rgb(19, 144, 155);
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+th {
+    padding: 14px 24px;
+}
+
+tr {
+    &:nth-child(2n) {
+        background-color: rgb(191, 192, 195);
+    }
+}
+
+td {
+    padding: 8px 18px;
+}

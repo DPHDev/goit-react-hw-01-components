@@ -1,0 +1,60 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 30px;
+    gap: 30px;
+
+    &_item{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+    
+        &:nth-child(1) {
+            background-color: rgb(53, 171, 207);
+        }
+        
+        &:nth-child(2) {
+            background-color: rgb(136, 61, 187);
+        }
+    
+        &:nth-child(3) {
+            background-color: rgb(186, 49, 97);
+        }
+    
+        &:nth-child(4) {
+            background-color: rgb(53, 174, 168);
+        }
+
+        &:nth-child(5) {
+            background-color: rgb(176, 116, 63);
+        }
+    }
+
+
+    &_label {
+        font-size: 15px;
+    }
+
+    &_percentage {
+        font-size: 20px;
+    }
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+    color: dimgray;
+}
+
+.stat-list{
+    display: flex;
+    list-style: none;
+}

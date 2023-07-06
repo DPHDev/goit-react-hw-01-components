@@ -6,11 +6,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
   background-color: #e7ecf2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .grayText, .stats .label, .description .location, .description .tag {
@@ -20,6 +16,40 @@ body {
 .boldText, .stats .quantity, .description .name {
   font-size: 20px;
   font-weight: 500;
+}
+
+.app {
+  margin: 10vh auto 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 30px;
+  border: 1px solid rebeccapurple;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 15vh auto 30px;
+}
+.menu_btn {
+  padding: 14px 24px;
+  border-radius: 10px;
+  color: white;
+  background-color: rebeccapurple;
+  border: 1px solid rebeccapurple;
+  border: 0px;
+  cursor: pointer;
+}
+.menu_btn:hover {
+  color: rebeccapurple;
+  background-color: white;
+  border: 1px solid rebeccapurple;
+  scale: 1.2;
 }
 
 .profile {
@@ -59,6 +89,121 @@ body {
   text-align: center;
   gap: 5px;
   border: 1px solid #caced2;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 30px;
+  gap: 30px;
+}
+.statistics_item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+.statistics_item:nth-child(1) {
+  background-color: rgb(53, 171, 207);
+}
+.statistics_item:nth-child(2) {
+  background-color: rgb(136, 61, 187);
+}
+.statistics_item:nth-child(3) {
+  background-color: rgb(186, 49, 97);
+}
+.statistics_item:nth-child(4) {
+  background-color: rgb(53, 174, 168);
+}
+.statistics_item:nth-child(5) {
+  background-color: rgb(176, 116, 63);
+}
+.statistics_label {
+  font-size: 15px;
+}
+.statistics_percentage {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  color: dimgray;
+}
+
+.stat-list {
+  display: flex;
+  list-style: none;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.friend-list_item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 2px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.online {
+  background-color: green;
+}
+
+.offline {
+  background-color: red;
+}
+
+.avatar {
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.transaction-history {
+  width: 60%;
+  text-align: center;
+  border-collapse: 1px solid rgb(191, 192, 195);
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.transaction-history_head {
+  background-color: rgb(19, 144, 155);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 14px 24px;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(191, 192, 195);
+}
+
+td {
+  padding: 8px 18px;
 }
 
 /*# sourceMappingURL=index.css.map */
